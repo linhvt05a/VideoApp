@@ -27,12 +27,13 @@ struct ItemModel: Codable {
     let node_id : String?
     let avatar_url : String?
     let gravatar_id : String?
-
+    let followers_url : String?
     enum CodingKeys: String, CodingKey {
         case login = "login"
         case id = "id"
         case node_id = "node_id"
         case avatar_url = "avatar_url"
         case gravatar_id = "gravatar_id"
+        case followers_url = "followers_url"
 }
 }
